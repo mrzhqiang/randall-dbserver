@@ -1,6 +1,7 @@
 package randall.dbserver;
 
 import java.net.URL;
+import java.util.Arrays;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -14,7 +15,10 @@ import randall.dbserver.util.Monitor;
  * @author mrzhqiang
  */
 public final class DBServer extends Application {
+  public static final int DB_SERVER_PROCESS_CODE = 1001;
+
   public static void main(String[] args) {
+    System.out.println(Arrays.toString(args));
     // todo 返回消息给游戏控制台
     launch(args);
   }
